@@ -34,3 +34,22 @@ btnDLike1.addEventListener("click", countDLike1);
 btnDLike2.addEventListener("click", countDLike2);
 
 
+
+/* //Function to handle like and dislike button clicks
+function updateCount(buttonId, countId) {
+   const button = document.getElementById(buttonId);
+   const count = document.getElementById(countId);
+  
+   button.addEventListener("click", () => {
+      const currentCount = parseInt(count.textContent, 10) || 0;
+      count.textContent = (currentCount + 1).toString();
+    });
+  }
+  
+ //  Updating the counts for each button and respective count display
+  updateCount("btnLike1", "count1");
+  updateCount("btnLike2", "count2");
+  updateCount("btnDLike1", "countD1");
+  updateCount("btnDLike2", "countD2");
+*/  
+
