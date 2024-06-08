@@ -38,6 +38,7 @@ const comment = document.getElementById("comment");
 const commentBox = document.getElementById("commentBox");
 
 function submitcomment(){
+comment.value="";
 commentBox.textContent += comment.value.toString() +"\n";
 
 }
