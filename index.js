@@ -40,7 +40,7 @@ const commentBox = document.getElementById("commentBox");
 function submitcomment(){
 
 commentBox.textContent += comment.value.toString() +"\n";
-comment.value="";
+comment.value=" ";
 
 }
 submit.addEventListener("click", submitcomment);
