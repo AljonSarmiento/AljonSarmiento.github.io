@@ -33,8 +33,15 @@ btnLike2.addEventListener("click", countLike2);
 btnDLike1.addEventListener("click", countDLike1);
 btnDLike2.addEventListener("click", countDLike2);
 
+const submit = document.getElementById("submit");
+const comment = document.getElementById("comment");
+const commentBox = document.getElementById("commentBox");
 
+function submitcomment(){
+commentBox.textContent += comment.value.toString() +"\n";
 
+}
+submit.addEventListener("click", submitcomment);
 /* //Function to handle like and dislike button clicks
 function updateCount(buttonId, countId) {
    const button = document.getElementById(buttonId);
@@ -51,5 +58,7 @@ function updateCount(buttonId, countId) {
   updateCount("btnLike2", "count2");
   updateCount("btnDLike1", "countD1");
   updateCount("btnDLike2", "countD2");
-*/  
+*/ 
+
+
 
