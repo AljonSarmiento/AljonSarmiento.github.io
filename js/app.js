@@ -87,8 +87,6 @@
             else if(cash.value == 0) {
                 alert('No orders found. Please add items to your cart.')
                 
-            } else {
-                alert('Insufficient amount! try again')
             }
         }
 
