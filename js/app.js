@@ -72,7 +72,7 @@
                 totalPrice += quantity * price;
             }
             total.value = '₱ ' + totalPrice.toLocaleString('en-US', { minimumFractionDigits: 2, maximumFractionDigits: 2 });
-            //calculateChange();
+            calculateChange();
         }
 
 
@@ -84,10 +84,10 @@
                 let changeAmount = cashTendered - totalPrice;
                 change.value = '₱ ' + changeAmount.toLocaleString('en-US', { minimumFractionDigits: 2, maximumFractionDigits: 2 });
             }
-            else if(cash.value == 0) {
+         /*   else if(cash.value == 0) {
                 alert('Enter your cash.')
                 
-            }
+            } */
         }
 
 
@@ -158,6 +158,6 @@
         document.getElementById('productQuantity8').addEventListener('click', addOrder);
         document.getElementById('productQuantity9').addEventListener('click', addOrder);
         
-        document.getElementById('pay').addEventListener('click', calculateChange);
+        //document.getElementById('pay').addEventListener('click', calculateChange);
         cash.addEventListener("keyup", calculateChange);
         document.getElementById('checkoutBtn').addEventListener('click', displayReceipt);
