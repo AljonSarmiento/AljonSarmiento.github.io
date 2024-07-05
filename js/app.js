@@ -160,6 +160,6 @@
         document.getElementById('productQuantity8').addEventListener('click', addOrder);
         document.getElementById('productQuantity9').addEventListener('click', addOrder);
         
-        //document.getElementById('pay').addEventListener('click', calculateChange);
+        document.getElementById('pay').addEventListener('click', calculateChange);
         cash.addEventListener("keyup", calculateChange);
         document.getElementById('checkoutBtn').addEventListener('click', displayReceipt);
