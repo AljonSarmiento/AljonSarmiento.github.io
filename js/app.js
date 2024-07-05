@@ -72,7 +72,7 @@
                 totalPrice += quantity * price;
             }
             total.value = '₱ ' + totalPrice.toLocaleString('en-US', { minimumFractionDigits: 2, maximumFractionDigits: 2 });
-            calculateChange();
+            //calculateChange();
         }
 
 
@@ -84,12 +84,12 @@
                 let changeAmount = cashTendered - totalPrice;
                 change.value = '₱ ' + changeAmount.toLocaleString('en-US', { minimumFractionDigits: 2, maximumFractionDigits: 2 });
             }
-            //else if(cash.value == 0) {
-            //    alert('No orders found. Please add items to your cart.')
+            else if(cash.value == 0) {
+                alert('No orders found. Please add items to your cart.')
                 
-           // } else {
-            //    alert('Insufficient amount! try again')
-           // }
+            } else {
+                alert('Insufficient amount! try again')
+            }
         }
 
 
