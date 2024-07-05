@@ -85,7 +85,7 @@
                 change.value = '₱ ' + changeAmount.toLocaleString('en-US', { minimumFractionDigits: 2, maximumFractionDigits: 2 });
             }
             else if(cash.value == 0) {
-                alert('No orders found. Please add items to your cart.')
+                alert('Enter your cash.')
                 
             }
         }
